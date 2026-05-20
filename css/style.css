@@ -1,0 +1,210 @@
+/* =============================================
+   TORO MOTORS - PREMIUM STYLE 2026
+   Robust, Creative & Professional
+   ============================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.7;
+  color: #1e2937;
+  background: #f8fafc;
+}
+
+/* ====================== HEADER & NAVBAR ====================== */
+.navbar {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%) !important;
+  padding: 1.2rem 0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25);
+  border-bottom: 5px solid #f59e0b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.5px;
+}
+
+.navbar-brand img {
+  height: 52px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+  transition: transform 0.3s;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.08);
+}
+
+.nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff !important;
+  background: rgba(245, 158, 11, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ====================== HERO SECTION ====================== */
+.hero-section {
+  background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(30, 58, 95, 0.85)), 
+              url('images/hero-bg.png') center/cover no-repeat fixed;
+  color: white;
+  padding: 200px 0 140px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* ====================== CARDS ====================== */
+.card, .service-card {
+  border: none;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: white;
+}
+
+.card:hover, .service-card:hover {
+  transform: translateY(-18px);
+  box-shadow: 0 30px 60px rgba(245, 158, 11, 0.25);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.12);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  color: #1e2937;
+  border: none;
+  padding: 14px 36px;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(245, 158, 11, 0.5);
+}
+
+/* ====================== FOOTER - VERY CREATIVE & ROBUST ====================== */
+.footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e2937 50%, #0f172a 100%);
+  color: #cbd5e1;
+  padding: 90px 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(to right, #f59e0b, #fbbf24, #f59e0b);
+}
+
+.footer::after {
+  content: 'TORO';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12rem;
+  font-weight: 900;
+  opacity: 0.03;
+  color: #fbbf24;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+.footer h5 {
+  color: #fbbf24;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.footer h5:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #f59e0b;
+}
+
+.footer a {
+  color: #cbd5e1;
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  color: #fbbf24;
+  padding-left: 8px;
+}
+
+/* ====================== MISC ====================== */
+.section-title {
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
